@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.h1 {
+    /* H1/medium/roboto */
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.h1-colored{
+    color: #101820;
+}
+
+.h2 {
+    /* H2/medium/roboto */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.h2-colored{
+    color: #101820;
+}
+
+.h3 {
+    /* H3/regular/roboto */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+    
+.h3-colored{
+    color: #101820;
+}
+
+.h4 {
+    /* H4/medium/roboto */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.h4-colored{
+    color: #101820;
+}
+
+.h4-regular {
+    /* H4/regular/roboto */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.h4-regular-colored{
+    color: #303030;
+}
+
+.body1 {
+    /* Body 1/regular/roboto */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.body1-colored{
+    color: #101820;
+}
+
+.body2 {
+    /* Body 2/light/roboto */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.body2-colored{
+    color: #101820;
+}
+
+.button {
+    /* Button/Bold/roboto */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.button-colored{
+    color: #101820;
+}
+
+.caption {
+    /* Caption/regular/roboto */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    display: flex;
+    align-items: center;
+}
+
+.caption-colored{
+    color: #303030;
+}
+
+.caption-10 {
+    /* Caption/regular/roboto */
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.caption-10-colored {
+    color: #303030;
+}

@@ -1,0 +1,13 @@
+<h1 *ngIf="customClass=='h1'" class={{finalClass}}>{{content}}</h1>
+
+<h2 *ngIf="customClass=='h2'" class={{finalClass}}>{{content}}</h2>
+
+<h3 *ngIf="customClass=='h3'" class={{finalClass}}>{{content}}</h3>
+
+<h4 *ngIf="customClass=='h4' || customClass=='h4-medium'" class={{finalClass}}>{{content}}</h4>
+
+<h4 *ngIf="customClass=='h4-regular'" class={{finalClass}}>{{content}}</h4>
+
+<p *ngIf="customClass=='body1' || customClass=='body2' || customClass=='button'" class={{finalClass}}>{{content}}</p>
+
+<caption *ngIf="customClass=='caption' || customClass=='caption-10'" class={{finalClass}}>{{content}}</caption>

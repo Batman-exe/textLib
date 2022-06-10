@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "headingLib": {
+    "textLib": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/heading-lib",
+            "outputPath": "dist/text-lib",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "headingLib:build:production"
+              "browserTarget": "textLib:build:production"
             },
             "development": {
-              "browserTarget": "headingLib:build:development"
+              "browserTarget": "textLib:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "headingLib:build"
+            "browserTarget": "textLib:build"
           }
         },
         "test": {
@@ -100,7 +100,38 @@
           }
         }
       }
+    },
+    "text": {
+      "projectType": "library",
+      "root": "projects/text",
+      "sourceRoot": "projects/text/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/text/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/text/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/text/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/text/src/test.ts",
+            "tsConfig": "projects/text/tsconfig.spec.json",
+            "karmaConfig": "projects/text/karma.conf.js"
+          }
+        }
+      }
     }
   },
-  "defaultProject": "headingLib"
+  "defaultProject": "textLib"
 }

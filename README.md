@@ -19,7 +19,7 @@ Used for type of text (string mandatory)
 Allowed classes:  
 h1  
 h2  
-h3
+h3  
 h4 or h4-medium (both are the same)  
 h4-regular  
 body1  

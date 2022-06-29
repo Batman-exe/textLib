@@ -10,15 +10,14 @@ export class TextComponent implements OnInit {
   @Input() customClass: string;
   @Input() content: string;
   @Input() customColor: boolean;
-  invalidClass: boolean;
   validClasses: string[];
+  /*Clase que se va a usar para el estilo en css */
   finalClass: string;
 
   constructor() { 
     this.customClass = "";
     this.content = "";
     this.customColor = false;
-    this.invalidClass = false;
     this.validClasses = ['h1', 'h2', 'h3', 'h4', 'h4-regular', 'h4-medium', 'body1', 'body2', 'button', 'caption', 'caption-10'];
     this.finalClass = this.customClass;
   }
